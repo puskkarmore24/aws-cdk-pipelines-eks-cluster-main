@@ -35,8 +35,8 @@ export class EksPipelineStack extends cdk.Stack {
       clusterVersion: eks.KubernetesVersion.V1_21,
       nameSuffix: clusterANameSuffix,
       env: {
-        account: process.env.CDK_DEFAULT_ACCOUNT,
-        region: process.env.CDK_DEFAULT_REGION,
+        account: '861976376325',
+        region: 'eu-north-1',
       },
     });
 
@@ -44,8 +44,8 @@ export class EksPipelineStack extends cdk.Stack {
       clusterVersion: eks.KubernetesVersion.V1_21,
       nameSuffix: clusterBNameSuffix,
       env: {
-        account: process.env.CDK_DEFAULT_ACCOUNT,
-        region: process.env.CDK_DEFAULT_REGION,
+        account: '861976376325',
+        region: 'eu-north-1',
       },
     });
 
