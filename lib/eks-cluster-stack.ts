@@ -23,6 +23,5 @@ export class EksClusterStack extends cdk.Stack {
       vpc,
       vpcSubnets: [{ subnetType: ec2.SubnetType.PRIVATE }],
     });
-
   }
 }
