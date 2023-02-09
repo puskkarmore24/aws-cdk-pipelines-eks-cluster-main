@@ -3,6 +3,7 @@ import eks = require("@aws-cdk/aws-eks");
 import ec2 = require("@aws-cdk/aws-ec2");
 import iam = require("@aws-cdk/aws-iam");
 import * as ssm from "@aws-cdk/aws-ssm";
+import { Construct } from 'constructs';
 
 export interface EksClusterStackProps extends cdk.StackProps {
   clusterVersion: eks.KubernetesVersion;

@@ -1,11 +1,9 @@
 import * as cdk from "@aws-cdk/core";
 import eks = require("@aws-cdk/aws-eks");
-import * as ssm from "@aws-cdk/aws-ssm";
 import {
   CodePipeline,
   CodePipelineSource,
   ShellStep,
-  ManualApprovalStep,
 } from "@aws-cdk/pipelines";
 import { EksClusterStage } from "./eks-cluster-stage";
 
