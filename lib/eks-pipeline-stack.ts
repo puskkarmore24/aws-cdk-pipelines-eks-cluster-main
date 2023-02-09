@@ -49,11 +49,6 @@ export class EksPipelineStack extends cdk.Stack {
       },
     });
 
-    const eksClusterWave = pipeline.addWave("DeployEKSClusters");
-
-    const domainName = ssm.StringParameter.valueForStringParameter(
-      this,
-      "/eks-cdk-pipelines/zoneName"
-    );  
+    const eksClusterWave = pipeline.addWave("DeployEKSClusters");  
   }
 }
