@@ -36,7 +36,7 @@ export class EksPipelineStack extends cdk.Stack {
       nameSuffix: clusterANameSuffix,
       env: {
         account: '861976376325',
-        region: 'eu-north-1c',
+        region: 'eu-north-1',
       },
     });
 
@@ -45,7 +45,7 @@ export class EksPipelineStack extends cdk.Stack {
       nameSuffix: clusterBNameSuffix,
       env: {
         account: '861976376325',
-        region: 'eu-north-1c',
+        region: 'eu-north-1',
       },
     });
 
