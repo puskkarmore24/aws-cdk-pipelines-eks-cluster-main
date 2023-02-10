@@ -10,7 +10,6 @@ import { EksClusterStage } from "./eks-cluster-stage";
 export class EksPipelineStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-
     const pipeline = new CodePipeline(this, "Pipeline", {
       synth: new ShellStep("Synth", {
         input: CodePipelineSource.gitHub(
@@ -27,7 +26,6 @@ export class EksPipelineStack extends cdk.Stack {
     });
 
     const clusterANameSuffix = "Application";
-    const clusterBNameSuffix = "Developer";
 
     const eksClusterStageA = new EksClusterStage(this, "ApplicationCluster", {
       clusterVersion: eks.KubernetesVersion.V1_21,
@@ -37,16 +35,5 @@ export class EksPipelineStack extends cdk.Stack {
         region: 'eu-north-1',
       },
     });
-
-    const eksClusterStageB = new EksClusterStage(this, "DeveloperCluster", {
-      clusterVersion: eks.KubernetesVersion.V1_21,
-      nameSuffix: clusterBNameSuffix,
-      env: {
-        account: '861976376325',
-        region: 'eu-north-1',
-      },
-    });
-
-    const eksClusterWave = pipeline.addWave("DeployEKSClusters");  
   }
 }
