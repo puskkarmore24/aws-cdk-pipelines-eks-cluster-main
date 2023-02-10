@@ -6,23 +6,33 @@ import {
   ShellStep,
 } from "@aws-cdk/pipelines";
 import { EksClusterStage } from "./eks-cluster-stage";
+import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
+import * as codepipelineActions from 'aws-cdk-lib/aws-codepipeline-actions';
+import * as codepipeline from 'aws-cdk-lib/aws-codepipeline';
+import { SecretValue } from "@aws-cdk/core";
 
 export class EksPipelineStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-    const pipeline = new CodePipeline(this, "Pipeline", {
-      synth: new ShellStep("Synth", {
-        input: CodePipelineSource.gitHub(
-          "puskkarmore24/aws-cdk-pipelines-eks-cluster-main",
-          "main",
-          {
-            authentication:
-              cdk.SecretValue.secretsManager("github-oauth-token"),
-          }
-        ),
-        commands: ["npm ci", "npm run build", "npx cdk synth"],
-      }),
-      pipelineName: "EKSCluster",
-    });
+
+const app = new cdk.App();
+const stack = new cdk.Stack(app, 'MyStack');
+
+
+// Read the secret from Secrets Manager
+const pipeline = new codepipeline.Pipeline(this, 'MyPipeline');
+const sourceOutput = new codepipeline.Artifact();
+const sourceAction = new codepipelineActions.GitHubSourceAction({
+  actionName: 'GitHub_Source',
+  owner: 'awslabs',
+  repo: 'aws-cdk',
+  oauthToken: SecretValue.secretsManager('my-github-token'),
+  output: sourceOutput,
+  branch: 'develop', // default: 'master'
+});
+pipeline.addStage({
+  stageName: 'Source',
+  actions: [sourceAction],
+});
   }
 }
