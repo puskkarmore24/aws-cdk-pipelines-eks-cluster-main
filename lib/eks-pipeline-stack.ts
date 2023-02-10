@@ -24,16 +24,5 @@ export class EksPipelineStack extends cdk.Stack {
       }),
       pipelineName: "EKSCluster",
     });
-
-    const clusterANameSuffix = "Application";
-
-    const eksClusterStageA = new EksClusterStage(this, "ApplicationCluster", {
-      clusterVersion: eks.KubernetesVersion.V1_21,
-      nameSuffix: clusterANameSuffix,
-      env: {
-        account: '861976376325',
-        region: 'eu-north-1',
-      },
-    });
   }
 }
