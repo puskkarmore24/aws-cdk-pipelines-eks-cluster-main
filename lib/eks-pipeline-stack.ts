@@ -15,11 +15,6 @@ export class EksPipelineStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-const app = new cdk.App();
-const stack = new cdk.Stack(app, 'MyStack');
-
-
-
 const pipeline = new CodePipeline(this, "Pipeline", {
   synth: new ShellStep("Synth", {
     input: CodePipelineSource.gitHub(
