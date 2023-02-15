@@ -8,3 +8,4 @@ const app = new App();
 new EksPipelineStack(app, 'EksPipelineStack', {
   env: { account: '861976376325', region: 'eu-north-1' },
 });
+app.synth();
