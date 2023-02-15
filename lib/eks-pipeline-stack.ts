@@ -11,7 +11,7 @@ export class EksPipelineStack extends Stack {
             pipelineName: "Eks-Pipeline",
             synth: new ShellStep("Synth", {
                 input: CodePipelineSource.gitHub(
-                    "puskkarmore24/aws-cdk",
+                    "puskkarmore24/aws-cdk-pipelines-eks-cluster-main",
                     "main",
                     {
                       authentication:
