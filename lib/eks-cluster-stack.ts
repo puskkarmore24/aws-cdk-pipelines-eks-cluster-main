@@ -5,7 +5,7 @@ import iam = require("aws-cdk-lib/aws-iam");
 import * as ssm from "aws-cdk-lib/aws-ssm";
 import { Construct } from 'constructs';
 
-export interface EksClusterStackProps extends cdk.StackProps {
+export interface EksClusterStackProps extends Stack {
   clusterVersion: eks.KubernetesVersion;
   nameSuffix: string;
 }
