@@ -1,8 +1,8 @@
-import * as cdk from "@aws-cdk/core";
-import eks = require("@aws-cdk/aws-eks");
-import ec2 = require("@aws-cdk/aws-ec2");
-import iam = require("@aws-cdk/aws-iam");
-import * as ssm from "@aws-cdk/aws-ssm";
+import * as cdk from "aws-cdk-lib/core";
+import eks = require("aws-cdk-lib/aws-eks");
+import ec2 = require("aws-cdk-lib/aws-ec2");
+import iam = require("aws-cdk-lib/aws-iam");
+import * as ssm from "aws-cdk-lib/aws-ssm";
 import { Construct } from 'constructs';
 
 export interface EksClusterStackProps extends cdk.StackProps {
@@ -11,7 +11,7 @@ export interface EksClusterStackProps extends cdk.StackProps {
 }
 
 export class EksClusterStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props: EksClusterStackProps) {
+  constructor(scope: Construct, id: string, props: EksClusterStackProps) {
     super(scope, id, props);
 
     const vpc = new ec2.Vpc(this, "Vpc", { maxAzs: 3 });
@@ -21,7 +21,7 @@ export class EksClusterStack extends cdk.Stack {
       version: props.clusterVersion,
       defaultCapacity: 0,
       vpc,
-      vpcSubnets: [{ subnetType: ec2.SubnetType.PRIVATE }],
+      vpcSubnets: [{ subnetType: ec2.SubnetType.PRIVATE_ISOLATED }],
     });
   }
 }
