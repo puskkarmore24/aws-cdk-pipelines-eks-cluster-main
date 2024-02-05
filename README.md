@@ -97,9 +97,29 @@ To deploy the pipeline for the first time, you'll need a GitHub secret name `git
 - **Coding Software Standards**: Misra C, Autosar
 - **Hardware Standards**: J1708, IS13252, along with knowledge of ISO, CE, FCC, BIS, & SAE standards.
 - **Hardware & Software Interfacings**: Memory (Flash, EEPROM, RAM), JTAG, GPS, GSM, GPRS, Wifi, BLE 4.0, RF 433Mhz, Cortex M4 Processor, ADC, PWM, Capture, Compare, Timer, GPIO, UART, I2C, SPI, LIN, CAN, RS485, RTC, Sensor, Raspberry Pi, Orange Pi, Arduino
-![image](https://github.com/puskkarmore24/aws-cdk-pipelines-eks-cluster-main/assets/93918737/dcfff7fc-f7c4-4e7d-997a-b86be741c32a)
 
 
+
+
+### Projects Worked On
+
+- **Engine Control Units Development**: Involved in the design, development, analysis, and value engineering of Engine Control Units for Petrol and diesel Engines.
+
+- **Automotive Infotainment Systems**:
+  - Designed and developed three automotive infotainment systems for SUVs, EVs, and Hybrid vehicles.
+  - Delivered advanced systems featuring dual-view displays, haptic touch screens, and hybrid ECU communication for a leading automotive OEM.
+  - Integrated key functionalities including Bluetooth, Navigation, GSM Module, Radio, DVD, USB, Steering wheel switch, Rear Camera, and HVAC control interface.
+
+### Roles and Responsibilities
+
+- **Circuit Design**: Conducted design and analysis of mixed-signal circuits.
+- **Documentation**: Prepared block diagrams, Bills of Materials (BOM), and floor plans.
+- **Schematic Entry**: Performed circuit tracing and schematic entry using ORCAD.
+- **Thermal Strategy**: Assisted in the development of thermal management strategies.
+
+### Achievements
+
+- **Infotainment System Specialist**: Specialized in the design, development, and testing of automotive infotainment systems, significantly enhancing user experience and vehicle integration.
 
 
 
