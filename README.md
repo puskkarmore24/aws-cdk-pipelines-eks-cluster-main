@@ -55,3 +55,52 @@ To deploy the pipeline for the first time, you'll need a GitHub secret name `git
 
 
 
+### Projects Worked On
+
+- **Vehicle Tracking System with LoraWAN & NB-IoT sensors** - Automotive
+- **Large capacity Automated Tank Cleaning Unit Design & Development** - Oil
+- **Real-Time objects Detection on automated conveyer belt** - Industrial
+- **Multi-Camera Stitching for Laparoscopy** - Biomedical
+- **Oil Tank Automation using Wireless Ultrasonic Distance Measurement** - Industrial
+- **Zigbee, Z-Wave and Wifi Based Home Automation sensors integrations** - Consumer
+
+### Roles and Responsibilities
+
+- Conducted **Requirement Analysis**, **Feasibility Study**, and **Project Scheduling** with emphasis on customer interaction.
+- Created and proofread presentations for top-level company executives.
+- Specialized in **Software Designing & Calibration**.
+- Engaged in **Hardware Designing, Testing, Validation**, and **Value Engineering**.
+- Led **Mechanical Designing & Assembly** processes.
+
+### Achievements
+
+- Achieved end-to-end product development encompassing Hardware, Software, and Mechanical aspects with comprehensive documentation.
+- Specialized in **Cost Reduction**, implementing **DFM (Design for Manufacturability)**, **DFR (Design for Reliability)**, **DFMEA (Design Failure Mode and Effects Analysis)**, and **DRBFM (Design Review Based on Failure Mode)** across different levels of product design.
+- Reduced prototype development time from 3 months to 1 month.
+- Focused design efforts on mass production, optimizing components and processes.
+- Managed teams and projects effectively, developing circuit and code libraries.
+
+### Tools Used
+
+#### Software Tools
+
+- **Coding**: MPLABX, Keil, LabView, Matlab & Simulink, Visual Studio, TI Code Composer Studio, NXP CodeWarrior, Proteus, RTOS, Bootloader Programming, PLC Automation.
+- **Project Management**: MS Project, Advanced Excel, PPT, Word, employing Waterfall & Agile methodologies.
+- **Languages**: Embedded C/C++, Linux, Python, Matlab
+
+#### Hardware Designing Tools
+
+- Orcad Pspice, NI Multisim, MathCad, LTSpice, Eagle, CAM350
+
+### Standards & Interfacing
+
+- **Coding Software Standards**: Misra C, Autosar
+- **Hardware Standards**: J1708, IS13252, along with knowledge of ISO, CE, FCC, BIS, & SAE standards.
+- **Hardware & Software Interfacings**: Memory (Flash, EEPROM, RAM), JTAG, GPS, GSM, GPRS, Wifi, BLE 4.0, RF 433Mhz, Cortex M4 Processor, ADC, PWM, Capture, Compare, Timer, GPIO, UART, I2C, SPI, LIN, CAN, RS485, RTC, Sensor, Raspberry Pi, Orange Pi, Arduino
+![image](https://github.com/puskkarmore24/aws-cdk-pipelines-eks-cluster-main/assets/93918737/dcfff7fc-f7c4-4e7d-997a-b86be741c32a)
+
+
+
+
+
+
