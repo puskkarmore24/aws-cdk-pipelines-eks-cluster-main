@@ -18,3 +18,40 @@ To deploy the pipeline for the first time, you'll need a GitHub secret name `git
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+### Project Overview: IoT Water Monitoring Solution Using LoRa WAN
+
+**Responsibilities:**
+- Managed the project lifecycle for a sophisticated IoT solution leveraging **LoRa WAN** for long-range, low-power communication across over **400 water storage units**.
+- Orchestrated data collection on water levels and intake, ensuring reliable transmission to a LoRa application server for centralized processing and storage.
+- Utilized **MQTT protocol** for efficient data transfer and implemented **Node-RED** to automate and process data through rule chains.
+- Directed integration efforts with **AWS IoT Core**, enhancing system capabilities with cloud computing resources.
+
+**Achievements:**
+- Successfully executed a business development strategy, enhancing the visibility and market reach of the company's software products, cloud services, and IoT solutions.
+- Demonstrated a robust background in technology sales, achieving notable success in the promotion of software solutions.
+- Developed and executed strategies to increase market penetration, uncover new business opportunities, and forge strategic partnerships.
+
+**Technical Proficiencies:**
+- **IoT Platforms:** LoRa Application Server, LoRa WAN Gateway
+- **Cloud Integration:** AWS IoT Core, Things Board
+- **Programming:** Python scripting on Raspberry Pi
+- **Automation:** Node-RED for creating rule chains and automating workflows
+
+
+
+
+
+
+
+
